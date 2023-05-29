@@ -1,0 +1,9 @@
+#!/bin/bash
+
+wmake
+
+cd testCase/
+
+ofTutorial3
+
+cd ../

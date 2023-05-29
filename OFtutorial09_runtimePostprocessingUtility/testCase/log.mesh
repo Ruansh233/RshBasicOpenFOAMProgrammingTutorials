@@ -1,0 +1,177 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  dev
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : dev-526b3840c7d8
+Exec   : blockMesh
+Date   : Feb 08 2022
+Time   : 13:19:12
+Host   : "ites-fps-ruanLX"
+PID    : 115225
+I/O    : uncollated
+Case   : /home/ruan/Desktop/Shenhui.ruan/OpenFOAM/OpenFOAMtest/OpenFOAMsourcecode/BasicOpenFOAMProgrammingTutorials/OFtutorial09_runtimePostprocessingUtility/testCase
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading "blockMeshDict"
+
+Creating block mesh from
+    "system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 3
+		Number of boundary faces : 12
+		Number of defined boundary faces : 12
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.02 .. 0.02
+        j : 0.04 .. 0.04 0.04 .. 0.04 0.0399599 .. 0.0399441 0.0399599 .. 0.0399441 
+        k : 0.04 .. 0.04 0.04 .. 0.04 0.0399599 .. 0.0399438 0.0399599 .. 0.0399438 
+    Block 1 cell size :
+        i : 0.02 .. 0.02
+        j : 0.0245528 .. 0.00122764 0.0245528 .. 0.00122764 0.024764 .. 0.0012382 0.024764 .. 0.0012382 
+        k : 0.0321747 .. 0.0336564 0.0321747 .. 0.0336564 0.0330394 .. 0.0339769 0.0330394 .. 0.0339769 
+    Block 2 cell size :
+        i : 0.02 .. 0.02
+        j : 0.0167666 .. 0.000838329 0.0167666 .. 0.000838329 0.0184763 .. 0.000923815 0.0184763 .. 0.000923815 
+        k : 0.0336645 .. 0.0321745 0.0336645 .. 0.0321745 0.0339841 .. 0.0330393 0.0339841 .. 0.0330393 
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (0 0 0) (1 1 1)
+  nPoints: 74766
+  nCells: 70000
+  nFaces: 214650
+  nInternalFaces: 205350
+----------------
+Patches
+----------------
+  patch 0 (start: 205350 size: 1400) name: inlet
+  patch 1 (start: 206750 size: 1400) name: outlet
+  patch 2 (start: 208150 size: 2000) name: pipe
+  patch 3 (start: 210150 size: 2250) name: symmetryVer
+  patch 4 (start: 212400 size: 2250) name: symmetryHor
+
+End
+
+
+Usage: transformPoints [OPTIONS] <transformations>
+options:
+  -allRegions       operate on all regions in regionProperties
+  -case <dir>       specify alternate case directory, default is the cwd
+  -fileHandler <handler>
+                    override the fileHandler
+  -hostRoots <(((host1 dir1) .. (hostN dirN))>
+                    slave root directories (per host) for distributed running
+  -libs <(lib1 .. libN)>
+                    pre-load libraries
+  -noFunctionObjects
+                    do not execute functionObjects
+  -parallel         run in parallel
+  -region <name>    specify alternative mesh region
+  -roots <(dir1 .. dirN)>
+                    slave root directories for distributed running
+  -rotateFields     transform vector and tensor fields
+  -srcDoc           display source code in browser
+  -doc              display application documentation in browser
+  -help             print the usage
+
+Transforms a mesh by translation, rotation and/or scaling.
+The <transformations> are listed comma-separated in a string and executed in sequence.
+
+transformations:
+  translate=<vector>        translation by vector, e.g. (1 2 3)
+  rotate=(<n1> <n2>)        rotation from unit vector n1 to n2
+  Rx=<angle>                rotation by given angle [deg], e.g. 90, about x-axis
+  Ry=<angle>                rotation by given angle [deg] about y-axis
+  Rz=<angle>                rotation by given angle [deg] about z-axis
+  Ra=<axis vector> <angle>  rotation by given angle [deg] about specified axis
+  scale=<vector>            scale by factors from vector in x, y, z directions,
+                            e.g. (0.001 0.001 0.001) to scale from mm to m
+
+example:
+  transformPoints "translate=(1.2 0 0), Rx=90, translate=(-1.2 0 0)"
+
+Using: OpenFOAM-dev (see https://openfoam.org)
+Build: dev-526b3840c7d8
+
+
+
+--> FOAM FATAL ERROR: 
+Invalid option: -scale
+
+
+FOAM exiting
+
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  dev
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : dev-526b3840c7d8
+Exec   : renumberMesh -overwrite
+Date   : Feb 08 2022
+Time   : 13:19:12
+Host   : "ites-fps-ruanLX"
+PID    : 115228
+I/O    : uncollated
+Case   : /home/ruan/Desktop/Shenhui.ruan/OpenFOAM/OpenFOAMtest/OpenFOAMsourcecode/BasicOpenFOAMProgrammingTutorials/OFtutorial09_runtimePostprocessingUtility/testCase
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = constant
+
+Mesh size: 70000
+Before renumbering :
+    band           : 49750
+    profile        : 1.36433e+08
+
+Using default renumberMethod.
+
+Selecting renumberMethod CuthillMcKee
+
+Reading geometric fields
+
+
+After renumbering :
+    band           : 1355
+    profile        : 6.8798e+07
+
+Writing mesh to "constant"
+
+End
+

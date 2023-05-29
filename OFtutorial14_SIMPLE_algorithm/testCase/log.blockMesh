@@ -1,0 +1,78 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  dev
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : dev-526b3840c7d8
+Exec   : blockMesh
+Date   : Feb 24 2022
+Time   : 14:57:32
+Host   : "Sh-Ruan-matebook"
+PID    : 9843
+I/O    : uncollated
+Case   : /mnt/d/Learning/OpenFOAMsourcecode/BasicOpenFOAMProgrammingTutorials/OFtutorial14_SIMPLE_algorithm/testCase
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading "blockMeshDict"
+
+Creating block mesh from
+    "system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+--> FOAM Warning : 
+    From function Foam::polyMesh::polyMesh(const Foam::IOobject&, Foam::pointField&&, const cellShapeList&, const faceListList&, const wordList&, const Foam::PtrList<Foam::dictionary>&, const Foam::word&, const Foam::word&, bool)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 873
+    Found 2 undefined faces in mesh; adding to default patch.
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 0
+		Number of boundary faces : 6
+		Number of defined boundary faces : 6
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.005 .. 0.005
+        j : 0.005 .. 0.005
+        k : 0.01
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (0 0 0) (0.5 0.1 0.01)
+  nPoints: 4242
+  nCells: 2000
+  nFaces: 8120
+  nInternalFaces: 3880
+----------------
+Patches
+----------------
+  patch 0 (start: 3880 size: 20) name: inlet
+  patch 1 (start: 3900 size: 20) name: outlet
+  patch 2 (start: 3920 size: 4000) name: frontAndBack
+  patch 3 (start: 7920 size: 200) name: walls
+
+End
+

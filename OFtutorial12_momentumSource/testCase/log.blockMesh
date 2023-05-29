@@ -1,0 +1,76 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  dev
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : dev-526b3840c7d8
+Exec   : blockMesh
+Date   : Feb 24 2022
+Time   : 14:01:35
+Host   : "Sh-Ruan-matebook"
+PID    : 9544
+I/O    : uncollated
+Case   : /mnt/d/Learning/OpenFOAMsourcecode/BasicOpenFOAMProgrammingTutorials/OFtutorial12_momentumSource/testCase
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading "blockMeshDict"
+
+Creating block mesh from
+    "system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 0
+		Number of boundary faces : 6
+		Number of defined boundary faces : 6
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.1 .. 0.1
+        j : 0.1 .. 0.1
+        k : 0.1
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (-2 -1 -1) (4 1 1)
+  nPoints: 26901
+  nCells: 24000
+  nFaces: 74800
+  nInternalFaces: 69200
+----------------
+Patches
+----------------
+  patch 0 (start: 69200 size: 1200) name: side0
+  patch 1 (start: 70400 size: 1200) name: side1
+  patch 2 (start: 71600 size: 400) name: inlet
+  patch 3 (start: 72000 size: 400) name: outlet
+  patch 4 (start: 72400 size: 1200) name: bottom
+  patch 5 (start: 73600 size: 1200) name: top
+
+End
+

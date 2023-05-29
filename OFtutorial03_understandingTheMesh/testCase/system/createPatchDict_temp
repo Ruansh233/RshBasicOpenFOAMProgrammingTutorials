@@ -1,0 +1,1443 @@
+
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \    /   O peration     | Website:  https://openfoam.org
+    \  /    A nd           | Version:  dev
+     \/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      createPatchDict;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+pointSync false;
+
+patches
+(
+ 
+    {
+        name                interface_block1_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block2_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block1_east);
+    }
+
+    {
+        name                interface_block2_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block1_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block2_east);
+    }
+     
+    {
+        name                interface_block1_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block6_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block1_north);
+    }
+
+    {
+        name                interface_block6_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block1_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block6_north);
+    }
+     
+    {
+        name                interface_block2_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block8_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block2_top);
+    }
+
+    {
+        name                interface_block8_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block2_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block8_bottom);
+    }
+     
+    {
+        name                interface_block2_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block1_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block2_east);
+    }
+
+    {
+        name                interface_block1_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block2_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block1_east);
+    }
+     
+    {
+        name                interface_block2_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block3_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block2_north);
+    }
+
+    {
+        name                interface_block3_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block2_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block3_north);
+    }
+     
+    {
+        name                interface_block3_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block9_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block3_top);
+    }
+
+    {
+        name                interface_block9_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block3_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block9_bottom);
+    }
+     
+    {
+        name                interface_block3_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block4_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block3_east);
+    }
+
+    {
+        name                interface_block4_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block3_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block4_east);
+    }
+     
+    {
+        name                interface_block3_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block2_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block3_north);
+    }
+
+    {
+        name                interface_block2_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block3_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block2_north);
+    }
+     
+    {
+        name                interface_block4_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block10_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block4_top);
+    }
+
+    {
+        name                interface_block10_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block4_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block10_bottom);
+    }
+     
+    {
+        name                interface_block4_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block3_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block4_east);
+    }
+
+    {
+        name                interface_block3_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block4_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block3_east);
+    }
+     
+    {
+        name                interface_block4_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block5_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block4_north);
+    }
+
+    {
+        name                interface_block5_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block4_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block5_north);
+    }
+     
+    {
+        name                interface_block5_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block11_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block5_top);
+    }
+
+    {
+        name                interface_block11_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block5_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block11_bottom);
+    }
+     
+    {
+        name                interface_block5_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block6_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block5_east);
+    }
+
+    {
+        name                interface_block6_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block5_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block6_east);
+    }
+     
+    {
+        name                interface_block5_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block4_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block5_north);
+    }
+
+    {
+        name                interface_block4_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block5_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block4_north);
+    }
+     
+    {
+        name                interface_block6_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block12_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block6_top);
+    }
+
+    {
+        name                interface_block12_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block6_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block12_bottom);
+    }
+     
+    {
+        name                interface_block6_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block5_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block6_east);
+    }
+
+    {
+        name                interface_block5_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block6_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block5_east);
+    }
+     
+    {
+        name                interface_block6_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block1_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block6_north);
+    }
+
+    {
+        name                interface_block1_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block6_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block1_north);
+    }
+     
+    {
+        name                interface_block7_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block1_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block7_bottom);
+    }
+
+    {
+        name                interface_block1_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block7_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block1_top);
+    }
+     
+    {
+        name                interface_block7_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block13_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block7_top);
+    }
+
+    {
+        name                interface_block13_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block7_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block13_bottom);
+    }
+     
+    {
+        name                interface_block7_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block8_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block7_east);
+    }
+
+    {
+        name                interface_block8_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block7_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block8_east);
+    }
+     
+    {
+        name                interface_block7_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block12_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block7_north);
+    }
+
+    {
+        name                interface_block12_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block7_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block12_north);
+    }
+     
+    {
+        name                interface_block8_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block2_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block8_bottom);
+    }
+
+    {
+        name                interface_block2_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block8_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block2_top);
+    }
+     
+    {
+        name                interface_block8_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block14_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block8_top);
+    }
+
+    {
+        name                interface_block14_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block8_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block14_bottom);
+    }
+     
+    {
+        name                interface_block8_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block7_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block8_east);
+    }
+
+    {
+        name                interface_block7_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block8_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block7_east);
+    }
+     
+    {
+        name                interface_block8_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block9_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block8_north);
+    }
+
+    {
+        name                interface_block9_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block8_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block9_north);
+    }
+     
+    {
+        name                interface_block9_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block3_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block9_bottom);
+    }
+
+    {
+        name                interface_block3_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block9_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block3_top);
+    }
+     
+    {
+        name                interface_block9_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block15_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block9_top);
+    }
+
+    {
+        name                interface_block15_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block9_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block15_bottom);
+    }
+     
+    {
+        name                interface_block9_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block10_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block9_east);
+    }
+
+    {
+        name                interface_block10_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block9_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block10_east);
+    }
+     
+    {
+        name                interface_block9_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block8_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block9_north);
+    }
+
+    {
+        name                interface_block8_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block9_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block8_north);
+    }
+     
+    {
+        name                interface_block10_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block4_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block10_bottom);
+    }
+
+    {
+        name                interface_block4_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block10_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block4_top);
+    }
+     
+    {
+        name                interface_block10_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block16_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block10_top);
+    }
+
+    {
+        name                interface_block16_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block10_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block16_bottom);
+    }
+     
+    {
+        name                interface_block10_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block9_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block10_east);
+    }
+
+    {
+        name                interface_block9_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block10_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block9_east);
+    }
+     
+    {
+        name                interface_block10_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block11_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block10_north);
+    }
+
+    {
+        name                interface_block11_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block10_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block11_north);
+    }
+     
+    {
+        name                interface_block11_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block5_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block11_bottom);
+    }
+
+    {
+        name                interface_block5_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block11_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block5_top);
+    }
+     
+    {
+        name                interface_block11_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block17_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block11_top);
+    }
+
+    {
+        name                interface_block17_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block11_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block17_bottom);
+    }
+     
+    {
+        name                interface_block11_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block12_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block11_east);
+    }
+
+    {
+        name                interface_block12_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block11_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block12_east);
+    }
+     
+    {
+        name                interface_block11_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block10_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block11_north);
+    }
+
+    {
+        name                interface_block10_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block11_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block10_north);
+    }
+     
+    {
+        name                interface_block12_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block6_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block12_bottom);
+    }
+
+    {
+        name                interface_block6_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block12_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block6_top);
+    }
+     
+    {
+        name                interface_block12_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block18_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block12_top);
+    }
+
+    {
+        name                interface_block18_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block12_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block18_bottom);
+    }
+     
+    {
+        name                interface_block12_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block11_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block12_east);
+    }
+
+    {
+        name                interface_block11_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block12_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block11_east);
+    }
+     
+    {
+        name                interface_block12_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block7_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block12_north);
+    }
+
+    {
+        name                interface_block7_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block12_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block7_north);
+    }
+     
+    {
+        name                interface_block13_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block7_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block13_bottom);
+    }
+
+    {
+        name                interface_block7_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block13_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block7_top);
+    }
+     
+    {
+        name                interface_block13_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block14_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block13_east);
+    }
+
+    {
+        name                interface_block14_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block13_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block14_east);
+    }
+     
+    {
+        name                interface_block13_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block18_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block13_north);
+    }
+
+    {
+        name                interface_block18_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block13_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block18_north);
+    }
+     
+    {
+        name                interface_block14_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block8_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block14_bottom);
+    }
+
+    {
+        name                interface_block8_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block14_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block8_top);
+    }
+     
+    {
+        name                interface_block14_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block13_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block14_east);
+    }
+
+    {
+        name                interface_block13_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block14_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block13_east);
+    }
+     
+    {
+        name                interface_block14_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block15_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block14_north);
+    }
+
+    {
+        name                interface_block15_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block14_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block15_north);
+    }
+     
+    {
+        name                interface_block15_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block9_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block15_bottom);
+    }
+
+    {
+        name                interface_block9_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block15_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block9_top);
+    }
+     
+    {
+        name                interface_block15_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block16_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block15_east);
+    }
+
+    {
+        name                interface_block16_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block15_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block16_east);
+    }
+     
+    {
+        name                interface_block15_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block14_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block15_north);
+    }
+
+    {
+        name                interface_block14_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block15_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block14_north);
+    }
+     
+    {
+        name                interface_block16_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block10_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block16_bottom);
+    }
+
+    {
+        name                interface_block10_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block16_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block10_top);
+    }
+     
+    {
+        name                interface_block16_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block15_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block16_east);
+    }
+
+    {
+        name                interface_block15_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block16_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block15_east);
+    }
+     
+    {
+        name                interface_block16_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block17_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block16_north);
+    }
+
+    {
+        name                interface_block17_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block16_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block17_north);
+    }
+     
+    {
+        name                interface_block17_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block11_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block17_bottom);
+    }
+
+    {
+        name                interface_block11_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block17_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block11_top);
+    }
+     
+    {
+        name                interface_block17_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block18_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block17_east);
+    }
+
+    {
+        name                interface_block18_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block17_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block18_east);
+    }
+     
+    {
+        name                interface_block17_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block16_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block17_north);
+    }
+
+    {
+        name                interface_block16_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block17_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block16_north);
+    }
+     
+    {
+        name                interface_block18_bottom;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block12_top;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block18_bottom);
+    }
+
+    {
+        name                interface_block12_top;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block18_bottom;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block12_top);
+    }
+     
+    {
+        name                interface_block18_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block17_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block18_east);
+    }
+
+    {
+        name                interface_block17_east;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block18_east;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block17_east);
+    }
+     
+    {
+        name                interface_block18_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block13_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block18_north);
+    }
+
+    {
+        name                interface_block13_north;
+        patchInfo
+        {
+            type            cyclic;
+            neighbourPatch  interface_block18_north;
+            transform       coincidentFullMatch;
+        }
+        constructFrom patches;
+        patches (block13_north);
+    }
+    
+);
+
+
+// ************************************************************************* //
+    

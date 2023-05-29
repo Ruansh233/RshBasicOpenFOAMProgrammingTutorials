@@ -1,0 +1,3 @@
+SOURCE += customLibrary.C
+
+LIB = $(FOAM_USER_LIBBIN)/libcustomLibrary

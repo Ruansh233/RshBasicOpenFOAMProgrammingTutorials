@@ -1,0 +1,36 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  dev
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : dev-526b3840c7d8
+Exec   : setFields
+Date   : Feb 24 2022
+Time   : 14:45:01
+Host   : "Sh-Ruan-matebook"
+PID    : 9693
+I/O    : uncollated
+Case   : /mnt/d/Learning/OpenFOAMsourcecode/BasicOpenFOAMProgrammingTutorials/OFtutorial13_waveEquationSolver/testCase
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Reading "setFieldsDict"
+
+Setting field default values
+    Setting internal values of volScalarField h
+
+Setting field region values
+    Adding cells with center within boxes 1((-0.1 -0.1 -1) (0.1 0.1 1))
+    Setting internal values of volScalarField h
+
+End
+

@@ -1,0 +1,46 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  dev
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : dev-526b3840c7d8
+Exec   : potentialFoam
+Date   : Feb 06 2022
+Time   : 11:16:02
+Host   : "Sh-Ruan-matebook"
+PID    : 570
+I/O    : uncollated
+Case   : /mnt/d/Learning/OpenFOAMsourcecode/BasicOpenFOAMProgrammingTutorials/OFtutorial08_customBC/testCase
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Reading velocity field U
+
+Constructing pressure field p
+
+Constructing velocity potential field Phi
+
+No MRF models present
+
+
+Calculating potential flow
+GAMG:  Solving for Phi, Initial residual = 1, Final residual = 1.15756, No Iterations 50
+GAMG:  Solving for Phi, Initial residual = 0.0464768, Final residual = 0.0318606, No Iterations 50
+GAMG:  Solving for Phi, Initial residual = 0.025171, Final residual = 0.0175656, No Iterations 50
+GAMG:  Solving for Phi, Initial residual = 0.015317, Final residual = 0.0111917, No Iterations 50
+GAMG:  Solving for Phi, Initial residual = 0.0103012, Final residual = 0.00753473, No Iterations 50
+Continuity error = 1.80684
+Interpolated velocity error = 7.30147e-07
+ExecutionTime = 2.45 s  ClockTime = 3 s
+
+End
+

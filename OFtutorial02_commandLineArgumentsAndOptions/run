@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd testCase/
+
+ofTutorial2 -dict name -someInt 1 aaa 0
+
+cd ../

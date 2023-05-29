@@ -1,0 +1,79 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  dev
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : dev-526b3840c7d8
+Exec   : blockMesh
+Date   : Feb 24 2022
+Time   : 14:45:01
+Host   : "Sh-Ruan-matebook"
+PID    : 9692
+I/O    : uncollated
+Case   : /mnt/d/Learning/OpenFOAMsourcecode/BasicOpenFOAMProgrammingTutorials/OFtutorial13_waveEquationSolver/testCase
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Deleting polyMesh directory
+    "/mnt/d/Learning/OpenFOAMsourcecode/BasicOpenFOAMProgrammingTutorials/OFtutorial13_waveEquationSolver/testCase/constant/polyMesh"
+Reading "blockMeshDict"
+
+Creating block mesh from
+    "system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 0
+		Number of boundary faces : 6
+		Number of defined boundary faces : 6
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.02 .. 0.02
+        j : 0.02 .. 0.02
+        k : 0.01
+
+There are no merge patch pairs edges
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (-1 -1 0) (1 1 0.01)
+  nPoints: 20402
+  nCells: 10000
+  nFaces: 40200
+  nInternalFaces: 19800
+----------------
+Patches
+----------------
+  patch 0 (start: 19800 size: 100) name: north
+  patch 1 (start: 19900 size: 100) name: south
+  patch 2 (start: 20000 size: 100) name: east
+  patch 3 (start: 20100 size: 100) name: west
+  patch 4 (start: 20200 size: 20000) name: topBot
+
+End
+

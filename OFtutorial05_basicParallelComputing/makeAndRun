@@ -1,0 +1,12 @@
+#!/bin/bash
+
+wmake
+
+cd testCase/
+
+decomposePar > log.decomposePar
+mpirun -np 4 ofTutorial5 -parallel
+reconstructPar
+# rm -r processor* 2>/dev/null
+
+cd ../
