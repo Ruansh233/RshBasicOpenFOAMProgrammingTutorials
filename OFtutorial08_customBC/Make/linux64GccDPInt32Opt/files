@@ -1,3 +1,0 @@
-SOURCE += prescribedPipeInletFvPatchVectorField.C
-
-LIB = $(FOAM_USER_LIBBIN)/libprescribedPipeInlet

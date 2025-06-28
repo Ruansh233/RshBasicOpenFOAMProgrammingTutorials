@@ -1,3 +1,0 @@
-SOURCE += OFtutorial10.C
-
-EXE = $(FOAM_USER_APPBIN)/ofTutorial10
